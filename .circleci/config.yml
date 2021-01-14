@@ -76,6 +76,7 @@ jobs:
             docker push $DOCKER_HUB_USERNAME/tp-devops-front:$CIRCLE_BUILD_NUM
             docker push $DOCKER_HUB_USERNAME/tp-devops-front:latest
 workflows:
+  version: 2
   build_deploy:
     jobs:
       - install
