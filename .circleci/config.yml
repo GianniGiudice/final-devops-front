@@ -84,9 +84,9 @@ workflows:
           requires:
             - install
       - netlify-deploy:
-          context: netlify_devops_final
+          context: Netlify
           requires:
-            - prod-build
+            - build
       - docker-build:
           context: Docker
           requires:
